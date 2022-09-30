@@ -1,6 +1,6 @@
 # Twitter, DogeCoin, Bitcoin and The cause and affect of Elon Musk ;)
 
-# SentimentAnalysis
+# Sentiment Analysis
 
 
 # Data Processing: 
@@ -26,7 +26,7 @@ Compare and contrast of merged dataframes
 # Plot:
 Sentiment impact vs. Pct Change
 
-
+https://github.com/bjezek/Teamawesome/blob/main/Resources/blah.png
 
 
 
