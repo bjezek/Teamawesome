@@ -1,6 +1,6 @@
 # Twitter, DogeCoin, Bitcoin and The cause and affect of Elon Musk ;)
 
-# Sentiment Analysis
+# SentimentAnalysis
 
 
 # Data Processing: 
@@ -12,21 +12,35 @@ str().contains() to filter out for specific words("Bitcoin", "Dogecoin")
 # Sentiment Analysis:
 
 Utilizing nltk.sentiment.vader/SentimentIntensityAnalyzer()
+nltk.download('vader_lexicon')
+
+
 Creating Sentiment Dataframes for Twitter, Tesla, Dogecoin, Bitcoin based on polarity scores from Sentiment Analyzer()
+-(.apply(sid.polarity_scores).apply(pd.Series))
+
+Pos + Neg + Neu = compound(Sentiment Score).
+
 
 # Merging of Data: 
 
-Merging Sentiment dataframes with Tweet dataframes using pd.merge
+Merging Sentiment dataframes with Tweet dataframes using pd.merge. 
+
 
 # Calculations of returns: 
 
 Various returns based on merged dataframes using pct.change(), pct.change().sum(), .mean for Sentiment Scores. 
 Compare and contrast of merged dataframes 
+Filtering out and creating dataframes for low and high sentiment for both Bitcoin and Crypto, and calculating those returns as well using pct.change().sum()
+
 
 # Plot:
 Sentiment impact vs. Pct Change
+Using .filter in order to graph only the necessary data. 
 
-https://github.com/bjezek/Teamawesome/blob/main/Resources/blah.png
+
+
+
+
 
 
 
