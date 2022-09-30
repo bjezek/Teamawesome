@@ -165,3 +165,11 @@ Scikitlearn (SVM) - https://scikit-learn.org/stable/modules/svm.html
 Pandas - https://pandas.pydata.org/docs/index.html
  
 Tweepy - https://www.tweepy.org/
+
+# The Project Team
+
+The work in this repo was done as a project for Rice's FinTech Bootcamp program, check us out on GitHub: 
+
+Gautam duckmobsauce
+Brandon bjezek
+Paula ai-to-the-moon
