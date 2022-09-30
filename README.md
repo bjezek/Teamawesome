@@ -13,4 +13,17 @@ noise that had nothing to do with the fundemental strength of the companys perfo
 # SVM Model for DogeCoin
 ![image](https://user-images.githubusercontent.com/106267420/193174176-009c0932-591d-4e4a-909f-d0d1b48e3b9a.png)
 # Regression Model for BTC
+![image](https://user-images.githubusercontent.com/106267420/193174937-f6c9af26-d0f1-4662-97ad-a099d89031b2.png)
+# Model Performance 
+Twitter (Logistic Regression): 
++180% return over testing period (Nov 2021 - present)
+DogeCoin (Fbprophet): 
++315% return over dataset entirety (Nov 2017 - present)
+Pro: Simple to implement (buy on Tuesday, sell on Friday) 
+Sentiment Analyzer (Elon Musk Tweets): 
+Tweets with “Dogecoin” for Dogecoin: 
++270%	
+Pro: Simple to implement (buy and sell at EOD). High returns.
+Con: Difficult to predict future returns as it depends on predicting human behavior.
+Volatile price movement. High risk.
 
