@@ -1,29 +1,29 @@
 # Twitter, DogeCoin, Bitcoin and The cause and affect of Elon Musk ;)
 
-#SentimentAnalysis
+# SentimentAnalysis
 
 
-#Data Processing: 
+# Data Processing: 
 Utilizing pandas
 reading .csv files of Elon Musk's tweets, closing prices of Bitcoin and Dogecoin. Set up Dataframes for each. 
 filtering out data, renaming columns 
 str().contains() to filter out for specific words("Bitcoin", "Dogecoin")
 
-#Sentiment Analysis:
+# Sentiment Analysis:
 
 Utilizing nltk.sentiment.vader/SentimentIntensityAnalyzer()
 Creating Sentiment Dataframes for Twitter, Tesla, Dogecoin, Bitcoin based on polarity scores from Sentiment Analyzer()
 
-#Merging of Data: 
+# Merging of Data: 
 
 Merging Sentiment dataframes with Tweet dataframes using pd.merge
 
-#Calculations of returns: 
+# Calculations of returns: 
 
 Various returns based on merged dataframes using pct.change(), pct.change().sum(), .mean for Sentiment Scores. 
 Compare and contrast of merged dataframes 
 
-#Plot:
+# Plot:
 Sentiment impact vs. Pct Change
 
 
