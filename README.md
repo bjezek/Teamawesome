@@ -2,6 +2,15 @@
 
 # Elon Musk Twitter analysis - Machine Models
 ran regression models, fbprophet, SVM on Bitcoin,Twitter and DogeCoin to see the probability 
-of success 
+of success. The regresssion model performed the best 2 out of 3 when it came to testing on the data
+using a 5 to 30 SMA with a strategy of 3 months outperforming the actual returns. Came to see that as 
+DogeCoin and BTC are not actual stocks they tend to show a negative return probability in the FB prophet model 
+for future perdiction based on non-fiscal factors causing a possible negative forecast for these two coins.
+The Regression models where used to see a strategy success or failure by looking at the live data without any outside
+noise that had nothing to do with the fundemental strength of the companys performance based on past events. 
 # Regression Model for Twitter
 ![image](https://user-images.githubusercontent.com/106267420/193173702-8482d9ca-7166-4d7e-81b5-a1e040ebbd85.png)
+# SVM Model for DogeCoin
+![image](https://user-images.githubusercontent.com/106267420/193174176-009c0932-591d-4e4a-909f-d0d1b48e3b9a.png)
+# Regression Model for BTC
+
