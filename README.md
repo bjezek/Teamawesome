@@ -14,7 +14,7 @@ Historical data was pulled from a variety of sources, such as Yahoo Finance and 
 
 The static datasets included in the project repository include: 
 * Bitcoin
-    * Resources/BTC-USD.csv, historical dataset from [Yahoo Finance](https://finance.yahoo.com/quote/BTC-USD/), daily OHLC data 9/21/2021 - 9/21/2022 (LINKX)
+    * Resources/BTC-USD.csv, historical dataset from [Yahoo Finance](https://finance.yahoo.com/quote/BTC-USD/), daily OHLC data 9/21/2021 - 9/21/2022
     * Resources/coin_Bitcoin.csv, historical dataset, daily OHLC data 4/29/2013 - 7/6/2021
 * Dogecoin
     * Resources/DOGE-USD.csv, historical dataset from [Yahoo Finance](https://finance.yahoo.com/quote/DOGE-USD?p=DOGE-USD&.tsrc=fin-srch), daily OHLC data 9/21/2021 - 9/21/2022
@@ -85,13 +85,13 @@ DogeCoin and BTC are not actual stocks they tend to show a negative return proba
 for future perdiction based on non-fiscal factors causing a possible negative forecast for these two coins.
 The Regression models where used to see a strategy success or failure by looking at the live data without any outside
 noise that had nothing to do with the fundemental strength of the companys performance based on past events. 
-# Regression Model for Twitter
+## Regression Model for Twitter
 ![image](https://user-images.githubusercontent.com/106267420/193173702-8482d9ca-7166-4d7e-81b5-a1e040ebbd85.png)
-# SVM Model for DogeCoin
+## SVM Model for DogeCoin
 ![image](https://user-images.githubusercontent.com/106267420/193174176-009c0932-591d-4e4a-909f-d0d1b48e3b9a.png)
-# Regression Model for BTC
+## Regression Model for BTC
 ![image](https://user-images.githubusercontent.com/106267420/193174937-f6c9af26-d0f1-4662-97ad-a099d89031b2.png)
-# Model Performance Summary
+## Model Performance Summary
 Twitter (Logistic Regression): 
 +180% return over testing period (Nov 2021 - present)
 DogeCoin (Fbprophet): 
@@ -169,6 +169,8 @@ In addition to the latest tweet information from Elon Musk available through the
 ## Visualize Crypto or Stock Performance Alongside Tweet Sentiment
 
 If you're interested in seeing how someone's Tweets line up with how the market performed, it's easy to incorporate the data together in a Jupyter Notebook. Just visualizing the data itself is enough to give you ideas about how the market is performing, or determine what Tweets are market-moving. 
+
+[TweetSentimentExample](/Resources/TweetSentimentPlotDogecoin.png)
 
 X notebook is an example of how you can use historical data and line it up with someone's Tweet history using the Twitter developer API. The notebook displays the following graph as an example, but can be updated to display other graphs as well. Keep in mind that the axis is accurate to +/- 1 day, so keep in mind that the data would have to be adjusted to the hour and adjust for timezone to see more 
 
