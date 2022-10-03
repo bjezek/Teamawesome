@@ -2,13 +2,30 @@
 
 The project team used a combination of machine learning models and sentiment analysis from Elon Musk's tweets to find various trading models for stocks and crypto. 
 
-Historical data available online along with data from APIs such as Alpaca's Trading API and Twitter's Developer API fueled this project. Sentiment analysis was applied using the nltk library, and machine learning models utilizing prophet (X) and scikitlearn (logistic regression & support vector machine models) were applied. 
+Historical data available online along with data from APIs such as Alpaca's Trading API and Twitter's Developer API fueled this project. Sentiment analysis was applied using the nltk library, and machine learning models utilizing prophet and scikitlearn libraries were applied. 
 
-The project team came up with a variety of models that seem to have performed well throughout the trading periods analyzed. Next steps in the project would be to refine the combinations of the models used, and incorporate hourly data instead of daily data in the analysis. 
+The project team came up with a variety of models that seem to have performed well throughout the trading periods analyzed. The next steps in the analysis are to refine the combination of the models used incorporate hourly data instead of daily data in the analysis. 
 
-Jupyter notebooks were made which incorporated the various techinques that our project team analyzed and set the code up to place trades based on information from the models. 
+Numerous Jupyter notebooks were made which incorporated the various techinques that our project team analyzed and set the code up to place trades based on information from the models. 
+
+# Data Gathering & Data Cleaning
+
+Historical data was pulled from a variety of sources, such as Yahoo Finance and Kaggle, along with the Twitter Developer API & Alpaca's Stock API.
+
+The static datasets included in the project repository include: 
+* Bitcoin
+    * Resources/BTC-USD.csv, historical dataset from [Yahoo Finance](https://finance.yahoo.com/quote/BTC-USD/), daily OHLC data 9/21/2021 - 9/21/2022 (LINKX)
+    * Resources/coin_Bitcoin.csv, historical dataset, daily OHLC data 4/29/2013 - 7/6/2021
+* Dogecoin
+    * Resources/DOGE-USD.csv, historical dataset from [Yahoo Finance](https://finance.yahoo.com/quote/DOGE-USD?p=DOGE-USD&.tsrc=fin-srch), daily OHLC data 9/21/2021 - 9/21/2022
+    * Resources/coin_Dogecoin.csv, historical dataset, daily OHLC data 12/16/2013 - 7/6/2021
+* Elon Musk Historical Twitter Data
+    * Resources/TweetsElonMusk.csv, historical dataset from [Kaggle](https://www.kaggle.com/datasets/andradaolteanu/all-elon-musks-tweets), 6/4/2010 - 4/17/2022
+    * Resources/elonmusk_full_tweets.csv, historical dataset from [Kaggle](https://www.kaggle.com/code/tayyarhussain/elon-musk-tweets-dataset-data-analysis/data?select=elonmusk.csv), 6/4/2010 - 9/12/2022
 
 # Sentiment Analysis
+
+Check out the SentimentAnalysis.ipynb notebook for a deeper dive: 
 
 ## Data Processing: 
 Utilizing pandas
@@ -44,7 +61,7 @@ Filtering out and creating dataframes for low and high sentiment for both Bitcoi
 Sentiment impact vs. Pct Change
 Using .filter in order to graph only the necessary data. 
 
-
+[Sentiment Score Plot Example](/Resources/sentimentscoreplot.png)
 
 
 
@@ -53,6 +70,14 @@ Using .filter in order to graph only the necessary data.
 
 
 # Machine Learning Models
+
+Numerous Jupyter Notebooks were used to conduct the analysis, including the following files: 
+* MachineModelBTC.ipynb
+* MachineModelDOGE.ipynb
+* MachineModelTWT.ipynb
+* TWT.ipynb
+* Technicalindicators.ipynb
+
 ran regression models, fbprophet, SVM on Bitcoin,Twitter and DogeCoin to see the probability 
 of success. The regresssion model performed the best 2 out of 3 when it came to testing on the data
 using a 5 to 30 SMA with a strategy of 3 months outperforming the actual returns. Came to see that as 
@@ -140,6 +165,18 @@ df = pd.json_normalize(tweets_data)
 In addition to the latest tweet information from Elon Musk available through the API, the project team also used historical data available from Kaggle. The dataset from X's project (X) includes Elon Musks's tweet history from X until X.
 
 # Implementing the Algorithms! 
+
+## Visualize Crypto or Stock Performance Alongside Tweet Sentiment
+
+If you're interested in seeing how someone's Tweets line up with how the market performed, it's easy to incorporate the data together in a Jupyter Notebook. Just visualizing the data itself is enough to give you ideas about how the market is performing, or determine what Tweets are market-moving. 
+
+X notebook is an example of how you can use historical data and line it up with someone's Tweet history using the Twitter developer API. The notebook displays the following graph as an example, but can be updated to display other graphs as well. Keep in mind that the axis is accurate to +/- 1 day, so keep in mind that the data would have to be adjusted to the hour and adjust for timezone to see more 
+
+Check out this notebook for more (project2datavisualizationupdatedwithsentiment.ipynb)
+
+## Pulling it All Together 
+
+Check out Full_Twitter_Machine_APIs_Models.ipynb or the VIDEO to see how this analysis fits together. 
 
 The notebook named "Full_Twitter_Machine_APIs_Models" includes a combination of models that are similar to what the project team evaluated. Numerous strategies are combined in this notebook and can be updated if necessary, this notebook serves as more of a proof-of-concept and the algorithms in it can be refined and revised. 
 
