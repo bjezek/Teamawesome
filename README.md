@@ -168,17 +168,15 @@ In addition to the latest tweet information from Elon Musk available through the
 
 ## Visualize Crypto or Stock Performance Alongside Tweet Sentiment
 
-If you're interested in seeing how someone's Tweets line up with how the market performed, it's easy to incorporate the data together in a Jupyter Notebook. Just visualizing the data itself is enough to give you ideas about how the market is performing, or determine what Tweets are market-moving. 
+If you're interested in seeing how someone's Tweets line up with how the market performed, it's easy to incorporate the data together in a Jupyter Notebook. Just visualizing the data itself is enough to give you ideas about how the market is performing, or determine what Tweets are market-moving. You can easily incorporate the data together in one plot using the hvplot library, and better yet, you can hover over the points to show you what Tweets were made, emoji's and all: 
 
 ![TweetSentimentExample](/Resources/TweetSentimentPlotDogecoin.png)
 
-X notebook is an example of how you can use historical data and line it up with someone's Tweet history using the Twitter developer API. The notebook displays the following graph as an example, but can be updated to display other graphs as well. Keep in mind that the axis is accurate to +/- 1 day, so keep in mind that the data would have to be adjusted to the hour and adjust for timezone to see more 
-
-Check out this notebook for more (project2datavisualizationupdatedwithsentiment.ipynb)
+The plot above was generated with one of the Jupyter notebooks in this repo (project2datavisualizationupdatedwithsentiment.ipynb). The notebook was set up to fiddle with and visualize the data at hand. 
 
 ## Pulling it All Together 
 
-Check out Full_Twitter_Machine_APIs_Models.ipynb or the VIDEO to see how this analysis fits together. 
+Check out Full_Twitter_Machine_APIs_Models.ipynb or the video screen-recording-example.webm to see how you can put the pieces together to inform your own trades. 
 
 The notebook named "Full_Twitter_Machine_APIs_Models" includes a combination of models that are similar to what the project team evaluated. Numerous strategies are combined in this notebook and can be updated if necessary, this notebook serves as more of a proof-of-concept and the algorithms in it can be refined and revised. 
 
@@ -204,6 +202,8 @@ Scikitlearn (SVM) - https://scikit-learn.org/stable/modules/svm.html
 Pandas - https://pandas.pydata.org/docs/index.html
  
 Tweepy - https://www.tweepy.org/
+
+Hvplot - - https://hvplot.holoviz.org/
 
 # The Project Team
 
