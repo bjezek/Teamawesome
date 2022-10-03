@@ -186,6 +186,8 @@ The notebook then goes through a few examples of how to implement these trading 
 
 ![Image](/Resources/DogeTuesFridayModel.PNG)
 
+(The calculations made for this trading model were done in the file DogeTuesFridayModelCalcCheck.ipynb and checked again in the Resources file DOGE_prophet_model_returns_calc_check.xlsx)
+
 Other examples that are implemented in the notebook are buying Dogecoin or Bitcoin if Elon Musk tweets about them (and/or depending on the sentiment of the tweets), and then another model where a support vector machine model is created with Dogecoin and a combination of simple moving average calculations. The last value in the predictions dataset is used as the buy/sell recommendation. This is just an example of how one would implement an svm model similar to what the project team discussed, the model in this notebook isn't an exact replica of the evaluation that was shown earlier in the README.  
 
 
