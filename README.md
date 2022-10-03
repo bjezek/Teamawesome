@@ -170,7 +170,7 @@ In addition to the latest tweet information from Elon Musk available through the
 
 If you're interested in seeing how someone's Tweets line up with how the market performed, it's easy to incorporate the data together in a Jupyter Notebook. Just visualizing the data itself is enough to give you ideas about how the market is performing, or determine what Tweets are market-moving. 
 
-[TweetSentimentExample](/Resources/TweetSentimentPlotDogecoin.png)
+![TweetSentimentExample](/Resources/TweetSentimentPlotDogecoin.png)
 
 X notebook is an example of how you can use historical data and line it up with someone's Tweet history using the Twitter developer API. The notebook displays the following graph as an example, but can be updated to display other graphs as well. Keep in mind that the axis is accurate to +/- 1 day, so keep in mind that the data would have to be adjusted to the hour and adjust for timezone to see more 
 
