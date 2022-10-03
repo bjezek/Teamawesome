@@ -8,7 +8,7 @@ The project team came up with a variety of models that seem to have performed we
 
 Numerous Jupyter notebooks were made which incorporated the various techinques that our project team analyzed and set the code up to place trades based on information from the models. 
 
-# Data Gathering & Data Cleaning
+# Data Gathering 
 
 Historical data was pulled from a variety of sources, such as Yahoo Finance and Kaggle, along with the Twitter Developer API & Alpaca's Stock API.
 
@@ -61,7 +61,7 @@ Filtering out and creating dataframes for low and high sentiment for both Bitcoi
 Sentiment impact vs. Pct Change
 Using .filter in order to graph only the necessary data. 
 
-[Sentiment Score Plot Example](/Resources/sentimentscoreplot.png)
+![Sentiment Score Plot Example](/Resources/sentimentscoreplot.png)
 
 
 
@@ -162,7 +162,7 @@ tweets_data = tweets_dict['data']
 df = pd.json_normalize(tweets_data) 
 ```
 
-In addition to the latest tweet information from Elon Musk available through the API, the project team also used historical data available from Kaggle. The dataset from X's project (X) includes Elon Musks's tweet history from X until X.
+In addition to the latest tweet information from Elon Musk available through the API, the project team also used historical data available from Kaggle, which are described in the Data Gathering section above.
 
 # Implementing the Algorithms! 
 
