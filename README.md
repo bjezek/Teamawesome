@@ -182,7 +182,9 @@ The notebook named "Full_Twitter_Machine_APIs_Models" includes a combination of 
 
 The beginning of the notebook imports the libraries that you need for the work, and connects you to the Alpaca and Twitter APIs. There is a sample .env file included in this repo, just update your credentials and save this file as your .env file in the same folder as the root directory of your notebook. 
 
-The notebook then goes through a few examples of how to implement these trading algorithms. The simplest model, just buying Dogecoin on Tuesday and selling on Friday, is easy to implement (and the project team has done so - X% gain in paper trading account this week!). Although this algorithm seems silly, it really would have turned a profit over the history of Dogecoin's life (at least as far back as the Yahoo Finance dataset yet). Difficult to predict how much longer this trend will be profitable for!
+The notebook then goes through a few examples of how to implement these trading algorithms. The simplest model, just buying Dogecoin on Tuesday and selling on Friday, is easy to implement, and the project team did so. This week in particular between Tuesday and Friday Dogecoin went up 1.6%. Although this algorithm seems silly, it really would have turned a profit over the history of Dogecoin's life (at least as far back as the Yahoo Finance dataset goes): 
+
+![Image](/Resources/DogeTuesFridayModel.PNG)
 
 Other examples that are implemented in the notebook are buying Dogecoin or Bitcoin if Elon Musk tweets about them (and/or depending on the sentiment of the tweets), and then another model where a support vector machine model is created with Dogecoin and a combination of simple moving average calculations. The last value in the predictions dataset is used as the buy/sell recommendation. This is just an example of how one would implement an svm model similar to what the project team discussed, the model in this notebook isn't an exact replica of the evaluation that was shown earlier in the README.  
 
